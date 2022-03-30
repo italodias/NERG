@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Teko:wght@300;600&family=Tomorrow:wght@100&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: 'Tomorrow', sans-serif;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    color:black;
+}
+/* header*/
+header{
+    display: flex;
+    background-color: black;
+    height: 70px;
+    justify-content: space-between;
+}
+#logo{
+    margin: 10px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    color: rgb(235, 233, 230);
+    margin: 20px;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    color: rgb(235, 233, 230) ;
+}
+#logotext{
+    position: absolute;
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Teko';
+    cursor: pointer;
+    left: 50px;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+a:hover{
+    color:rgb(255, 0, 0);
+    transition: 0.5s;    
+}
+/*Sub menu*/
+.dropbtn {
+    background-color: black;
+    color: antiquewhite;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: antiquewhite;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color:black;
+      color: red;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:black;
+    color:red ;
+  }
+
+  /*slider*/
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item{
+    height: 70vh;
+  }
+#mainSlider .carousel-caption{
+    top: 10%;
+    
+}
+#mainSlider .carousel-caption #banner-text1{
+
+    font-size: 27px;
+    margin-top: 20px;
+    font-family: "Tomorrow";
+}
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-top: 60px;
+    font-style: oblique;
+    font-family: "Tomorrow";
+}
+
+#mainSlider .carousel-caption #banner-text2{
+    font-size: 70px;
+    text-align: start;
+}
+#mainSlider .carousel-caption #p1{
+    font-size: 20px;
+    text-align: start;
+}
+#mainSlider .carousel-caption #banner-text3{
+    font-size: 60px;
+}
+#mainSlider .carousel-caption #p2{
+    font-size: 25px;
+}
+#button1{
+    position: absolute;
+    font-family: 'Teko';
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(7, 7, 7);
+    border-radius: 15px;
+    padding: 8px 15px;
+    border: 3px solid;
+    transition: 0.5s;
+    left: 428px;
+    top: 270px;
+}
+#button2{
+    position: absolute;
+    font-family: 'Teko';
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(7, 7, 7);
+    border-radius: 15px;
+    padding: 8px 15px;
+    border: 3px solid;
+    transition: 0.5s;
+    left: 50px;
+    top: 200px;
+
+}
+#button3{
+    position: absolute;
+    font-family: 'Teko';
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgb(7, 7, 7);
+    border-radius: 15px;
+    padding: 8px 15px;
+    border: 3px solid;
+    transition: 0.5s;
+    left: 428px;
+    top: 250px;
+}
+    
+/* brilho do slide*/
+
+#banner1{
+    filter: brightness(28%);
+}
+#banner2{
+    filter: brightness(60%);
+}
+#banner3{
+    filter: brightness(25%);
+}
+.footer{
+    background-color: black;
+    height: 30vh;
+    color: antiquewhite;
+}
+.text-footer{
+    color: antiquewhite;
+    left: -110px;
+    position: relative;
+    top: 50px;
+}
+.p-footer{
+    color: antiquewhite;
+}
+.location{
+    position: absolute;
+    text-align: end;
+    left: 890px;
+    color: antiquewhite;
+}
+.about-company{
+    position: relative;
+    left: -110px;
+    
+}
+#ulfooter{
+   position: relative;
+   left: -120px;
+   top: -20px;
+}
+.links{
+    position: relative;
+    left:140px
+}
+#span{
+    border-top:1px solid rgba(255,255,255,.1);
+}
+#rangers{
+    position: relative;
+
+}
+footer{
+    background-color: black;
+}
+.btn{
+    border-radius: 30px;
+    border: 2px solid;
+}
+.contato{
+    text-align: right;
+   padding-left: -20px;
+   position: absolute;
+   left:1150px;
+}
+.blink_me{
+    font-size: 60px;
+    position: absolute;
+    left: 13px;
+    top: 520px;
+    font-family: 'TEko';
+    font-style: italic;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+
+    
+}
+
